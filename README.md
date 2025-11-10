@@ -1,11 +1,15 @@
-# Angie’s 50th — Belize (Static Site, v6)
+# Angie’s 50th — Belize (Static Site, v7)
 
-Full site with: hero, trip details Google Sheet (embedded), hotels, flights, carts, **Optional Tour**, gallery, and RSVP form.
+This version simplifies image names and adds cache-busting query strings to avoid path/caching issues on Vercel.
 
-## How to deploy
-1) Unzip. Upload everything (including the **assets** folder) to your GitHub repo.
-2) Vercel will redeploy automatically.
-3) In `script.js`, paste your Google Apps Script Web App URL as `GSCRIPT_URL` to collect RSVPs.
+## Files
+- `index.html`, `style.css`, `script.js`, `README.md`
+- `assets/reef.jpg`, `assets/coco.jpg`, `assets/cart.jpg`, `assets/tropic.jpg`, `assets/shores.jpg`
 
-## Edit the table
-The Google Sheet embed iframe is in `index.html` under the "Trip Details Sheet" section.
+## Deploy
+Unzip → upload **everything** (including `/assets`) to GitHub → commit → Vercel redeploys.
+
+## Tip
+If an image still doesn’t display, try opening it directly:
+`https://YOUR_DOMAIN/assets/reef.jpg`
+If that 404s, the `assets` folder isn’t in the repo or the filename differs.
