@@ -4,19 +4,197 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Angie’s 50th — Belize (Apr 29–May 3, 2026)</title>
+  <meta name="description" content="Trip details for Angie’s 50th in Belize. Dates, hotel, flights, golf cart rentals, tours, photo gallery, and RSVP form."/>
   <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <section id="tours" class="section light">
-    <div class="wrap">
-      <h2>Optional Tour</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Hol Chan Marine Reserve + Shark Ray Alley (Snorkel)</h3>
-          <p>Belize’s iconic snorkel with coral gardens, turtles, nurse sharks & rays. Great for all levels.</p>
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">Angie’s 50th — Belize</div>
+    <nav class="nav">
+      <a href="#home">Overview</a>
+      <a href="#stay">Hotel</a>
+      <a href="#flights">Flights</a>
+      <a href="#carts">Golf Carts</a>
+      <a href="#tours">Tours</a>
+      <a href="#gallery">Gallery</a>
+      <a class="btn" href="#rsvp">RSVP</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <img class="hero-bg" src="assets/ambergis-caye.jpg" alt="Belize Barrier Reef aerial"/>
+    <div class="wrap hero-inner">
+      <div class="hero-card">
+        <div class="chip">April 29 – May 3, 2026 • Ambergris Caye, Belize</div>
+        <h1>Celebrating Angie’s 50th</h1>
+        <p>Sun, reef, and friends. Everything you need is below — hotel, flights, carts, and the group snorkel.</p>
+        <div class="actions">
+          <a class="btn primary" href="#rsvp">RSVP & Tour Interest</a>
+          <a class="btn ghost" href="#stay">Hotel</a>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Embedded table area -->
+  <section id="details-table" class="section light">
+    <div class="wrap">
+      <h2>Trip Details Sheet</h2>
+      <p class="muted">This table updates live from our Google Sheet.</p>
+      <div class="sheet-embed">
+        <!-- If you publish your Sheet (File → Share → Publish to web → embed link), paste the URL below -->
+        <iframe id="sheetFrame" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://docs.google.com/spreadsheets/d/1SOWdmINugeLJpOcCMEIKF3TzNpSSfEG-Wbj65XVpccw/preview"
+          allowfullscreen></iframe>
+      </div>
+      <p class="fineprint">If the table doesn't load, <a target="_blank" href="https://docs.google.com/spreadsheets/d/1SOWdmINugeLJpOcCMEIKF3TzNpSSfEG-Wbj65XVpccw/edit?gid=390492827#gid=390492827">open it in Google Sheets</a>.</p>
+    </div>
+  </section>
+
+  <section id="stay" class="section">
+    <div class="wrap">
+      <h2>Recommended Hotel</h2>
+      <div class="cards">
+        <a class="card wide" href="https://www.sandypointresorts.com/coco-beach-resort/" target="_blank" rel="noreferrer">
+          <div class="thumb"><img src="assets/caption.jpg" alt="Coco Beach Resort pool and suites"></div>
+          <div class="card-body">
+            <h3>Coco Beach Resort (Sandy Point Resorts)</h3>
+            <p>Upscale beachfront resort with large pools and a swim‑up bar; north of San Pedro.</p>
+          </div>
+        </a>
+      </div>
+
+      <h3 class="sub">Additional Hotel Option</h3>
+      <div class="cards">
+        <a class="card wide" href="https://www.sandypointresorts.com/belizean-shores-resort/" target="_blank" rel="noreferrer">
+          <div class="thumb"><img src="assets/95817585.jpg" alt="Belizean Shores Resort pool and grounds"></div>
+          <div class="card-body">
+            <h4>Belizean Shores Resort</h4>
+            <p>Condo‑style suites with pool and beach access in the same area.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="flights" class="section light">
+    <div class="wrap">
+      <h2>Getting There</h2>
+      <p>Fly to Belize City (BZE). Multiple airlines serve BZE; however, <a class="link" href="https://www.aa.com/" target="_blank" rel="noreferrer">American Airlines</a> often offers the quickest route to Belize.</p>
+      <div class="cards two">
+        <a class="card" href="https://www.tropicair.com/" target="_blank" rel="noreferrer">
+          <div class="thumb small"><img src="assets/Tropic-Air-Belize-600x400.jpg" alt="Tropic Air plane over reef"></div>
+          <h3>Hop Flight to San Pedro (Tropic Air)</h3>
+          <p>Book at BZE after customs or online. 15‑minute flight to Ambergris Caye.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="carts" class="section">
+    <div class="wrap">
+      <h2>Golf Cart Rentals</h2>
+      <p class="muted">Primary way to get around San Pedro. Reserve ahead for best rates.</p>
+      <div class="cards three">
+        <a class="card" href="https://www.rentgolfcartsanpedro.com/" target="_blank" rel="noreferrer">
+          <div class="thumb small"><img src="assets/36.jpg" alt="Golf cart in San Pedro with Belize mural"></div>
+          <h3>Isla Bonita Golf Cart Rentals</h3>
+          <p>Airport‑adjacent; online booking and published rates.</p>
+        </a>
+        <a class="card" href="https://vipgolfcartrental.com/" target="_blank" rel="noreferrer">
+          <div class="thumb small"><img src="assets/36.jpg" alt="Golf cart in San Pedro"></div>
+          <h3>VIP Golf Cart Rental</h3>
+          <p>Well‑reviewed operator; south of town.</p>
+        </a>
+        <a class="card" href="https://www.golfcartbelize.com/" target="_blank" rel="noreferrer">
+          <div class="thumb small"><img src="assets/36.jpg" alt="Golf cart in San Pedro"></div>
+          <h3>C&amp;S Golf Cart Rentals</h3>
+          <p>Delivers to resorts; 4‑ & 6‑seaters.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="tours" class="section light">
+    <div class="wrap">
+      <h2>Group Tour</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Hol Chan Marine Reserve + Shark Ray Alley (Snorkel)</h3>
+          <p>Belize’s iconic snorkel with coral gardens, turtles, nurse sharks & rays. Great for all levels.</p>
+          <p>
+            <a class="link" href="https://belizeprodivecenter.com/tour/snorkeling-hol-chan-and-shark-ray-alley/" target="_blank" rel="noreferrer">Belize Pro Dive Center</a>
+            &nbsp;•&nbsp;
+            <a class="link" href="https://www.tuffenufftours.com/belize-snorkeling-tours" target="_blank" rel="noreferrer">Tuff E Nuff</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <div class="wrap">
+      <h2>Photo Gallery</h2>
+      <div class="gallery">
+        <img src="assets/ambergis-caye.jpg" alt="Belize Reef 1"/>
+        <img src="assets/caption.jpg" alt="Coco Beach Resort"/>
+        <img src="assets/36.jpg" alt="Golf cart in San Pedro"/>
+        <img src="assets/Tropic-Air-Belize-600x400.jpg" alt="Tropic Air over reef"/>
+        <img src="assets/95817585.jpg" alt="Belizean Shores Resort"/>
+      </div>
+    </div>
+  </section>
+
+  <section id="rsvp" class="section light">
+    <div class="wrap">
+      <h2>RSVP & Tour Interest</h2>
+      <p class="muted">Submit once per household. We’ll use this to estimate headcount for tours.</p>
+      <form id="rsvp-form" class="form-card">
+        <div class="grid2">
+          <label>Full Name
+            <input name="name" required placeholder="Your name"/>
+          </label>
+          <label>Email
+            <input name="email" type="email" required placeholder="you@email.com"/>
+          </label>
+          <label>How many attending?
+            <input name="party_size" type="number" min="1" value="1"/>
+          </label>
+          <label>Staying where?
+            <input name="lodging" placeholder="Hotel/Airbnb"/>
+          </label>
+        </div>
+        <fieldset>
+          <legend>Tour Interest</legend>
+          <label class="check"><input type="checkbox" name="tour_holchan" /> Hol Chan + Shark Ray Alley (Snorkel)</label>
+        </fieldset>
+        <label>Notes
+          <textarea name="notes" rows="4" placeholder="Anything we should know (dietary, dates, etc.)"></textarea>
+        </label>
+        <button id="submit-btn" type="submit" class="btn primary">Send RSVP</button>
+        <div id="form-status" class="status"></div>
+        <p class="fineprint">Submissions save into a Google Sheet via your Apps Script webhook (set it in <code>script.js</code> as <code>GSCRIPT_URL</code>).</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© <span id="year"></span> Angie’s 50th Belize • 4/29/26–5/3/26</p>
+    <div class="links">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
