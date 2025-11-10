@@ -1,17 +1,17 @@
-[README.md](https://github.com/user-attachments/files/23442900/README.md)
-# Angie’s 50th — Belize (Static Site)
+# Angie’s 50th — Belize (Static Site, v2)
 
-This folder is deploy‑ready on Vercel/Netlify/GitHub Pages.
-No build steps needed — it's plain HTML/CSS/JS.
+Resort-style, lighter layout. Includes:
+- Reef hero image
+- Coco Beach + Belizean Shores cards with photos
+- Flights: American Airlines mention + Tropic Air hop flight with image
+- Only Hol Chan tour
+- Golf cart photo on each card
+- Embedded Google Sheet panel under the hero buttons
+- RSVP form (posts to Google Apps Script URL you supply)
 
-## Edit
-- `index.html` — content and links
-- `style.css` — colors and layout
-- `script.js` — paste your Google Apps Script Web App URL as `GSCRIPT_URL`
+## Sheet embed
+Replace the `iframe` src with your published-to-web embed link for a clean view:
+File → Share → Publish to web → Embed → paste URL into `index.html` (#details-table).
 
-## Google Sheet hookup
-1) Create a Google Sheet with headers:
-   `timestamp, name, email, party_size, lodging, tour_holchan, tour_secretbeach, notes`
-2) In the sheet: Extensions → Apps Script → paste the code from our chat.
-3) Deploy → **Web app** → Execute as *Me* → Who has access *Anyone* → **Deploy**.
-4) Copy the **Web app URL** and paste it into `script.js` as `GSCRIPT_URL`.
+## Google Sheet webhook
+Set your Apps Script Web App URL in `script.js` as `GSCRIPT_URL`.

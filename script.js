@@ -15,7 +15,6 @@ form.addEventListener('submit', async (e) => {
   const fd = new FormData(form);
   const data = Object.fromEntries(fd.entries());
   data.tour_holchan = fd.get('tour_holchan') ? 'yes' : 'no';
-  data.tour_secretbeach = fd.get('tour_secretbeach') ? 'yes' : 'no';
   data.timestamp = new Date().toISOString();
 
   try {
