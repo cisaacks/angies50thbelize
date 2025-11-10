@@ -1,5 +1,5 @@
 // Replace with your Google Apps Script Web App URL after you deploy it
-const GSCRIPT_URL = "https://script.google.com/macros/s/PASTE_YOUR_DEPLOYMENT_ID/exec";
+const GSCRIPT_URL = "https://script.google.com/macros/s/AKfycbzecDnN_d5ULFuXbUv4NwhI-r-wi5yjDa0BtP2ljSyUMOS20CMa-evTFLYH3dP4J8Bm/exec";
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
