@@ -1,15 +1,16 @@
-# Angie’s 50th — Belize (Static Site, v7)
+# Angie’s 50th — Belize (v10)
 
-This version simplifies image names and adds cache-busting query strings to avoid path/caching issues on Vercel.
-
-## Files
-- `index.html`, `style.css`, `script.js`, `README.md`
-- `assets/reef.jpg`, `assets/coco.jpg`, `assets/cart.jpg`, `assets/tropic.jpg`, `assets/shores.jpg`
+- Multi-file build (small `index.html`) to avoid GitHub UI file-size warning.
+- Crisp hero (limited height, cover, no upscale), soft sand + turquoise theme.
+- Wording updates applied exactly as requested.
+- Trip Details Sheet under Optional Tour with a **Refresh Table** button.
+- RSVP is wired to your provided Apps Script URL.
 
 ## Deploy
-Unzip → upload **everything** (including `/assets`) to GitHub → commit → Vercel redeploys.
+1) Upload the entire folder (including `/assets`) to GitHub and commit.
+2) Vercel will redeploy automatically.
 
-## Tip
-If an image still doesn’t display, try opening it directly:
-`https://YOUR_DOMAIN/assets/reef.jpg`
-If that 404s, the `assets` folder isn’t in the repo or the filename differs.
+## Sheet Not Updating?
+- Make sure the sheet is **Published to the web** (File → Share → Publish to web).
+- Click **Refresh Table** on the site (adds a cache-busting query param).
+- Hard refresh your browser (Cmd/Ctrl-Shift-R).
