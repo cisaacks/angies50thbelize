@@ -1,29 +1,39 @@
 <!DOCTYPE html><html lang="en"><head>
 <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Trip Planning Recommendations</title>
+<title>Trip Updates and Recommendations</title>
 <link rel="stylesheet" href="styles.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Quicksand:wght@400;600&display=swap"/>
 <style>
-body{background:#fffaf4;font-family:Inter, sans-serif;color:#17201e;margin:0;padding:0}
-.wrap{max-width:900px;margin:40px auto;padding:0 20px}
+body{background:linear-gradient(180deg,#fffaf4 0%,#fff7ec 100%);font-family:'Quicksand',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#17201e;margin:0;padding:0}
+.wrap{max-width:900px;margin:40px auto;padding:0 20px;position:relative}
+.wrap::before,.wrap::after{content:"";position:fixed;top:18%;width:140px;height:260px;border-radius:999px;background:radial-gradient(circle at 30% 20%,rgba(42,188,179,.28),rgba(255,250,244,0));z-index:-1}
+.wrap::before{left:0}
+.wrap::after{right:0;transform:scaleX(-1)}
 .back-link{font-size:14px;margin-bottom:16px;display:inline-flex;align-items:center;gap:6px;color:#2abcb3}
 .badge{display:inline-block;border-radius:999px;border:1px solid #2abcb3;padding:4px 10px;font-size:12px;color:#2abcb3;margin-bottom:10px}
 .lead-callout{background:#f7efe5;border-radius:12px;padding:12px 14px;font-weight:600;color:#17201e;margin:12px 0}
-.flight-card{margin:18px 0 28px;padding:14px;border-radius:14px;background:#fff;border:1px solid #e7e1d8;box-shadow:0 6px 20px rgba(0,0,0,.06);}
+.flight-card{margin:18px 0 28px;padding:18px 20px;border-radius:18px;background:#fff;border:1px solid #e7e1d8;box-shadow:0 6px 20px rgba(0,0,0,.06)}
+.flight-divider{border:0;border-top:1px dashed #e7e1d8;margin:16px 0}margin:18px 0 28px;padding:14px;border-radius:14px;background:#fff;border:1px solid #e7e1d8;box-shadow:0 6px 20px rgba(0,0,0,.06);}
 .flight-image-wrap{width:100%;overflow:visible;max-width:700px;margin:0 auto;}
 .flight-image-wrap img{width:100%;height:auto;max-width:700px;object-fit:contain;display:block;margin:0 auto;}
-.section{margin-bottom:32px;padding-bottom:24px;border-bottom:1px solid #e7e1d8}
+.section{margin-bottom:32px;padding-bottom:24px;border-bottom:1px solid #e7e1d8;text-align:center}
 .section h2{text-align:center;margin:0 0 8px;font-family:'Playfair Display',serif;}
 ul{padding-left:18px;color:#5e6a65;margin:6px 0 0}
-.section{text-align:center;}
-.section ul{text-align:left;max-width:700px;margin:0 auto;}
+.section ul{text-align:left;max-width:700px;margin:0 auto}
 </style>
 </head><body>
 <div class="wrap">
 <a class="back-link" href="index.html">&#8592; Back to main trip page</a>
 <div class="badge">Planning notes</div>
-<h1>Trip Planning Recommendations</h1>
-<p class="lead-callout">Wayne and I have purchased our tickets. We're arriving on 4/25/26 to spend time with my family ahead of the party, but here is our return flight:</p>
+<h1>Trip Updates and Recommendations</h1>
+<p class="lead-callout">Update 11/23/25: Wayne and I, Angie and Sean have booked our flights. Wayne and I are getting to Belize the Saturday before (family time) but we are all on the same flight back to Tampa. Angie and Sean's arrival details, and the flight we are all returning on is below.</p>
 <div class="flight-card">
+<h2>Angie and Sean's flight to Belize – American Airlines: Wednesday, April 29, 2026</h2>
+<p><strong>Leg 1:</strong> TPA → MIA — AA 1918<br>
+Depart TPA: 7:30 AM &middot; Arrive MIA: 8:37 AM</p>
+<p><strong>Leg 2:</strong> MIA → BZE — AA 1191<br>
+Depart MIA: 10:05 AM &middot; Arrive BZE: 10:35 AM</p>
+<hr class="flight-divider">
 <h2>Our Return Flight – American Airlines: Sunday, May 3, 2026</h2>
 <p><strong>Leg 1:</strong> BZE → MIA — AA 326<br>
 Depart BZE: 3:15 PM &middot; Arrive MIA: 7:25 PM</p>
