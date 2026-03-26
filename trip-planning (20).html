@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trip Updates and Recommendations — Angie’s 50th Belize</title>
+<style>
+:root{
+  --card:#ffffff;
+  --text:#264653;
+  --muted:#5f6b73;
+  --accent:#2a9d8f;
+  --border:#e7ddd0;
+  --shadow:0 10px 28px rgba(38, 70, 83, 0.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: linear-gradient(180deg, #f9f6f0 0%, #f4efe5 100%);
+  color:var(--text);
+  line-height:1.55;
+}
+.wrap{
+  max-width:1120px;
+  margin:0 auto;
+  padding:28px 20px 56px;
+}
+.top-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin:0 0 18px;
+  font-weight:700;
+}
+.top-links a{
+  color:var(--accent);
+  text-decoration:none;
+  background:rgba(42,157,143,0.08);
+  border:1px solid rgba(42,157,143,0.16);
+  border-radius:999px;
+  padding:8px 14px;
+}
+.top-links a:hover{ text-decoration:underline; }
+h1{
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  margin:0 0 20px;
+  color:#1f3a44;
+  white-space:nowrap;
+}
+h2{
+  font-size:1.55rem;
+  margin:0 0 14px;
+  color:#1f3a44;
+}
+h3{
+  margin:0 0 8px;
+  font-size:1.15rem;
+  color:#1f3a44;
+}
+.bubble{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:24px;
+  padding:22px;
+  box-shadow:var(--shadow);
+  margin:18px 0;
+}
+.flight-bubble{ background:#ffffff; }
+.flight-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+}
+.flight-card{
+  padding:14px 16px;
+  border-radius:18px;
+  border:1px solid #ebe4d9;
+  background:#fffdfa;
+}
+.flight-heading{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:8px;
+  font-weight:700;
+  color:#1f3a44;
+  line-height:1.25;
+}
+.flight-heading img{
+  width:34px;
+  height:auto;
+  object-fit:contain;
+  flex:0 0 auto;
+}
+.leg{
+  margin:10px 0 0;
+  font-size:.98rem;
+  line-height:1.4;
+}
+.leg:first-of-type{ margin-top:4px; }
+.action-bubble{
+  background: linear-gradient(135deg, #ffd84d 0%, #fff3b0 100%);
+  border:3px solid #ffb700;
+  box-shadow: 0 16px 40px rgba(255, 183, 0, 0.35);
+}
+.action-title{
+  color:#b8860b;
+  font-size:1.85rem;
+  margin:0 0 14px;
+}
+.red{
+  color:#c1121f;
+  font-weight:700;
+}
+.itinerary-bubble{
+  background: linear-gradient(135deg, #e6f7f5 0%, #fff4d8 100%);
+  border:2px solid #e8c66a;
+}
+.itinerary-grid{
+  display:grid;
+  gap:16px;
+}
+.itinerary-card{
+  display:grid;
+  grid-template-columns:300px 1fr;
+  gap:18px;
+  align-items:stretch;
+  background:#ffffff;
+  border-radius:18px;
+  padding:14px;
+  box-shadow:0 6px 18px rgba(38,70,83,0.08);
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.itinerary-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 14px 30px rgba(38,70,83,0.18);
+}
+.itinerary-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:14px;
+  display:block;
+}
+ul, ol{ margin:8px 0 0 20px; }
+li{ margin:8px 0; }
+a{ color:var(--accent); }
+.muted{ color:var(--muted); }
+
+@media (max-width: 900px){
+  h1{ white-space:normal; }
+  .flight-grid{ grid-template-columns:1fr; }
+  .itinerary-card{
+    grid-template-columns:1fr;
+  }
+  .itinerary-card img{
+    height:220px;
+  }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="top-links">
+  <a href="#flights">Flights</a>
+  <a href="#updates">Updates</a>
+  <a href="#actions">Action Items</a>
+  <a href="#itinerary">Itinerary</a>
+</div>
+
+<h1>Trip Updates and Recommendations</h1>
+
+<section id="flights" class="bubble flight-bubble">
+  <div class="flight-grid">
+    <div class="flight-card">
+      <div class="flight-heading">
+        <img src="aa_logo.png" alt="American Airlines logo">
+        <div>Angie and Sean's UPDATED flight to Belize – American Airlines: Wednesday, April 29, 2026</div>
+      </div>
+      <p class="leg"><strong>Leg 1:</strong> TPA → MIA — AA 1918<br>Depart TPA: 8:03 AM · Arrive MIA: 9:14 AM</p>
+      <p class="leg"><strong>Leg 2:</strong> MIA → BZE — AA 1191<br>Depart MIA: 10:38 AM · Arrive BZE: 11:05 AM</p>
+    </div>
+
+    <div class="flight-card">
+      <div class="flight-heading">
+        <img src="aa_logo.png" alt="American Airlines logo">
+        <div>Our Return Flight – American Airlines: Sunday, May 3, 2026</div>
+      </div>
+      <p class="leg"><strong>Leg 1:</strong> BZE → MIA — AA 326<br>Depart BZE: 3:31 PM · Arrive MIA: 7:50 PM</p>
+      <p class="leg"><strong>Leg 2:</strong> MIA → TPA — AA 1714<br>Depart MIA: 10:41 PM · Arrive TPA: 11:46 PM</p>
+    </div>
+  </div>
+</section>
+
+<section id="updates" class="bubble">
+  <p><strong>Update 11/23/25:</strong> Wayne and I, Angie and Sean have booked our flights. Wayne and I are getting to Belize the Saturday before (family time) but we are all on the same flight back to Tampa. Angie and Sean's arrival details, and the flight we are all returning on is below.</p>
+
+  <p><strong>Update 3/17/26:</strong> Please note the TPA - BZE flight details have been updated.</p>
+
+  <p><strong>Update 3/18/26:</strong> I have booked our Snorkel Boat Tour for May 1st, 2026 (Angie's Birthday). It is a private 6 hour tour where we'll snorkel at Hol Chan and swim with nurse sharks at Shark Ray Alley, spearfish at another location, and end with a beach BBQ. Food and Rum Punch will be provided — <a href="https://www.goslowtoursbelize.com/our-tours/" target="_blank" rel="noopener noreferrer">https://www.goslowtoursbelize.com/our-tours/</a></p>
+</section>
+
+<section id="actions" class="bubble action-bubble">
+  <h2 class="action-title">⚡⚡⚡ Action Items</h2>
+  <ol>
+    <li><strong>The Snorkel Tour is $185 per person, and they've requested cash payment.</strong> Please Paypal/Venmo/Zelle me at <a href="mailto:cdmastry@hotmail.com">cdmastry@hotmail.com</a> or 706-461-1030.</li>
+
+    <li><strong>Book your RoundTrip Island Hopper Flight Now.</strong> Go to <a href="https://www.tropicair.com/" target="_blank" rel="noopener noreferrer">https://www.tropicair.com/</a> and select:<br>
+      <strong>Departure:</strong> BZE Belize City Gldsn Intl<br>
+      <strong>Arrival:</strong> SPR San Pedro<br>
+      <strong>Outbound:</strong> 4/29/26 1:00pm<br>
+      <strong>Return:</strong> 5/3/26 1:00pm<br>
+      Wayne and I will be booking the “Everyday” option (cheapest, nonrefundable).<br>
+      <span class="muted"><strong>Note:</strong> While booking your flight, you will receive a prompt recommending arriving to Belize City International Airport a full 3 hours ahead of your International flight, however Wayne and I feel very comfortable getting through the airport closer to 2 hours and do not feel like additional time is needed. If you'd prefer more time, you can return on the earlier 12:30 pm flight.</span>
+    </li>
+
+    <li><strong>Golf Cart Rental.</strong> I have rented five 4-Seater Golf Carts, one per couple (Sean+Angie, Pat+Kerri, Jill+Jake, Claire+Wayne, Mike+Tina). It will be $150 per couple (includes taxes, fees, bridge pass) and you will pay them directly with your credit card on arrival.</li>
+  </ol>
+
+  <p class="red">*Please let me know asap if you do NOT plan to rent a golf cart, however you will not be able to get around the island without a golf cart.</p>
+</section>
+
+<section id="itinerary" class="bubble itinerary-bubble">
+  <h2>🌴 Trip Itinerary</h2>
+
+  <div class="itinerary-grid">
+    <div class="itinerary-card">
+      <img src="pic-1.jpg" alt="Arrival day">
+      <div>
+        <h3>✈️ Arrival Day</h3>
+        <ul>
+          <li>Arrive Belize City 11:05 AM</li>
+          <li>Flight to San Pedro 1:00 PM</li>
+          <li>Golf cart pickup</li>
+          <li>Arrive Coco Beach Resort</li>
+          <li>Afternoon at Secret Beach</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="itinerary-card">
+      <img src="pic-2.jpg" alt="April 30">
+      <div>
+        <h3>🍹 April 30</h3>
+        <ul>
+          <li>Breakfast at Estel’s</li>
+          <li>In Town Bar Crawl</li>
+          <li>Visit Claire’s best bar picks</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="itinerary-card">
+      <img src="pic-3.webp" alt="May 1 birthday day">
+      <div>
+        <h3>🎉 May 1 – Birthday Day</h3>
+        <ul>
+          <li>Day Boat Tour (9:00 AM – 3:00 PM)</li>
+          <li>Snorkel Hol Chan &amp; Shark Ray Alley</li>
+          <li>Spearfishing</li>
+          <li>Beach BBQ</li>
+          <li>Akasha - Happy Hour (5 PM)</li>
+          <li>Akasha - Angie’s Birthday Dinner (6 PM)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="itinerary-card">
+      <img src="pic-4.jpg" alt="May 2">
+      <div>
+        <h3>🏝 May 2</h3>
+        <ul>
+          <li>Day trip to Caye Caulker</li>
+          <li>Ferry to and from Caye Caulker</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="itinerary-card">
+      <img src="pic-5.jpg" alt="Departure">
+      <div>
+        <h3>✈️ Departure</h3>
+        <ul>
+          <li>Depart Coco Beach Resort 11:00 AM</li>
+          <li>Flight to Belize City 1:00 PM</li>
+          <li>AA 326 3:31 PM BZE - MIA</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bubble">
+  <h2>Packing Tips</h2>
+  <ul>
+    <li>Lightweight clothing, swimsuits, cover-ups, and something casual-nice for dinners.</li>
+    <li>Reef-safe sunscreen, hat, sunglasses, and water shoes or sandals that can get wet.</li>
+    <li>Snorkel gear is optional — our tour will provide snorkel gear.</li>
+  </ul>
+</section>
+
+<section class="bubble">
+  <h2>Communication</h2>
+  <ul>
+    <li>Share your arrival details (flight into BZE) to the group text so the group has a sense of who’s arriving when.</li>
+    <li>We'll want to use WhatsApp once everyone is on the island.</li>
+  </ul>
+</section>
+
+</div>
+</body>
+</html>
